@@ -64,22 +64,22 @@ lin
   SoDoI subj = {
     s = \\t,a,b,o =>
       let 
-	so = case b of {
-	  R.CPos => "so" ; 
-	  R.CNeg c => "neither"
-	  } ;
-	did = case <t,a> of {
-	  <X.Pres,X.Simul> => R.agrVerb "does" "do" subj.a ;
-	  <X.Pres,X.Anter> => R.agrVerb "has" "have" subj.a ;
-	  <X.Past,X.Simul> => "did" ;
-	  <X.Past,X.Anter> => "had" ;
-	  <X.Fut ,_      > => "will" ;
-	  <X.Cond,_      > => "would" 
-	  }
+    so = case b of {
+      R.CPos => "so" ; 
+      R.CNeg c => "neither"
+      } ;
+    did = case <t,a> of {
+      <X.Pres,X.Simul> => R.agrVerb "does" "do" subj.a ;
+      <X.Pres,X.Anter> => R.agrVerb "has" "have" subj.a ;
+      <X.Past,X.Simul> => "did" ;
+      <X.Past,X.Anter> => "had" ;
+      <X.Fut ,_      > => "will" ;
+      <X.Cond,_      > => "would" 
+      }
       in 
       case o of {
-	R.ODir _ => so ++ did ++ (subj.s ! R.npNom) ;
-	R.OQuest => did ++ (subj.s ! R.npNom) ++ so 
+    R.ODir _ => so ++ did ++ (subj.s ! R.npNom) ;
+    R.OQuest => did ++ (subj.s ! R.npNom) ++ so 
       }
     } ;
 

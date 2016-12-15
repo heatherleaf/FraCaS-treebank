@@ -138,12 +138,12 @@ lin
   taxi_N = mkN "taxi" "taxin" "taxibilar" "taxibilarna" ;
   temper_N = mkN "humör" Neutr ;
   tenor_N = mkN "tenor" "tenorer" ;
-  time_N = mkN "tid" "tider" ;	-- 'tidpunkt' behövs ev. också
+  time_N = mkN "tid" "tider" ;  -- 'tidpunkt' behövs ev. också
   today_N = mkN "idag" ;
   traffic_N = mkN "trafik" "trafiken" "trafik" "trafiken" ;
   train_N = mkN "tåg" Neutr ;
   university_graduate_N = (mkN "universitetsakademiker" "universitetsakademikern" 
-			     "universitetsakademiker" "universitetsakademikerna") ;
+                             "universitetsakademiker" "universitetsakademikerna") ;
   university_student_N = mkN "universitetsstudent" "universitetsstudenter" ;
   week_N = mkN "vecka" Utr ;
   wife_N = mkN "fru" "fruar" ;
@@ -219,7 +219,7 @@ lin
   broke_A = mkA "pank" ;
   canadian_A = compoundA (mkA "kanadensisk") ;
   clever_A = mkA "smart" "smart" ;
--- mkA "begåvad" "begåvat" "begåvade" "begåvade" "mer begåvad" "mest begåvad" "mest begåvade" ;
+  -- mkA "begåvad" "begåvat" "begåvade" "begåvade" "mer begåvad" "mest begåvad" "mest begåvade" ;
   competent_A = compoundA (mkA "kompetent" "kompetent") ;
   crucial_A = compoundA (mkA "kritisk") ;
   dedicated_A = mkA "särskild" "särskilt" ;
@@ -243,7 +243,7 @@ lin
   interesting_A = mkA "intressant" "intressant" ;
   irish_A = compoundA (mkA "irländsk") ;
   italian_A = compoundA (mkA "italiensk") ;
-  known_A = mkA "känd" "känt" ;	-- jfr 'noted'
+  known_A = mkA "känd" "känt" ;    -- jfr 'noted'
   large_A = mkA "stor" "större" "störst" ;
   leading_A = compoundA (mkA "ledande") ;
   legal_A = compoundA (mkA "juridisk") ;
@@ -286,15 +286,15 @@ lin
   arrive_in_V2 = mkV2 (mkV "anländer") (mkPrep "till") ;
   attend_V2 = mkV2 "närvarar" (mkPrep "vid") ;
   award_V3 = mkV3 (mkV "tilldelar") ;
---  be_on_V2 = mkV2 I.ligga_V (mkPrep "på") ;
---  be_over_V = partV be_V "over" ;
+  -- be_on_V2 = mkV2 I.ligga_V (mkPrep "på") ;
+  -- be_over_V = partV be_V "over" ;
   beat_V = I.slå_V ;
   become_V2 = mkV2 I.bliva_V ;
   believe_VS = mkVS (mkV "tror") ;
   blame1_V2 = mkV2 "beskyller" ;
   blame2_V2 = mkV2 "skyller" ;
---  blame_for_V3 = mkV3 (mkV "anklagar") (mkPrep "för") ;
---  blame_on_V3 = mkV3 (mkV "skyller") (mkPrep "på") ;
+  -- blame_for_V3 = mkV3 (mkV "anklagar") (mkPrep "för") ;
+  -- blame_on_V3 = mkV3 (mkV "skyller") (mkPrep "på") ;
   bring_V2V = mkV2V (partV taga_V "med") noPrep noPrep ;
   build_V2 = mkV2 "tillverkar" ;
   buy_V2 = mkV2 "köper" ;
@@ -394,11 +394,11 @@ lin
   take_V2V = mkV2V taga_V noPrep noPrep ;
 
   award_and_be_awarded_V2 = mkV2 (mkV "tilldela och tilldelas" 
-				    "tilldelar och tilldelas" 
-				    "tilldela och tilldelas" 
-				    "tilldelade och tilldelades"
-				    "tilldelat och tilldelats"
-				    "tilldelad och bliven tilldelad") ;
+                                    "tilldelar och tilldelas" 
+                                    "tilldela och tilldelas" 
+                                    "tilldelade och tilldelades"
+                                    "tilldelat och tilldelats"
+                                    "tilldelad och bliven tilldelad") ;
 
 -- DETERMINERS
   a_few_Det = {s,sp = \\_,_ => "ett fåtal" ; n = Pl ; det = DIndef} ;
@@ -407,22 +407,22 @@ lin
   anyPl_Det = G.somePl_Det ;
   anySg_Det = G.someSg_Det ;
   both_Det = {s,sp = \\b,_ => "båda" ++ if_then_Str b "de" "" ; 
-	      n = Pl ; det = DDef Def} ;
+              n = Pl ; det = DDef Def} ;
   each_Det = G.every_Det ;
   either_Det = {s,sp = \\b,g => genderForms "någon av" "något av" ! g ++ if_then_Str b "de" "" ; 
-		n = Pl ; det = DDef Def} ;
+                n = Pl ; det = DDef Def} ;
   neither_Det = {s,sp = \\b,g => genderForms "ingen av" "inget av" ! g ++ if_then_Str b "de" "" ; 
-		 n = Pl ; det = DDef Def} ;
+                 n = Pl ; det = DDef Def} ;
   one_or_more_Det = {s,sp = \\_ => genderForms "en eller flera" "ett eller flera" ; 
-		     n = Pl ; det = DIndef} ;
+                     n = Pl ; det = DIndef} ;
   several_Det = {s,sp = \\_,_ => "flera" ; n = Pl ; det = DIndef} ;
   twice_as_many_Det = {s,sp = \\_,_ => "dubbelt så många" ; n = Pl ; det = DIndef} ;
 
   half_a_Card = {s = table {Utr => "en halv"; Neutr => "ett halvt"} ; n = Sg} ;
 
   the_other_Q = {s,sp = table {Sg => \\_,_ => genderForms ["den andra"] ["det andra"]; 
-			       Pl => \\_,_,_ => ["de andra"]};
-		 det = DDef Def} ;
+                               Pl => \\_,_,_ => ["de andra"]};
+                 det = DDef Def} ;
 
 -- NUMERALS
 

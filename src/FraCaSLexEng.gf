@@ -321,8 +321,8 @@ lin
   hate_V2 = mkV2 "hate" ;
   hurt_V2 = mkV2 I.hurt_V ;
   increase_V = mkV "increase" ;
-  know_VQ = mkVQ (mkV "know" "knew" "known") ;	-- misrepresented in IrregEng.gf
-  know_VS = mkVS (mkV "know" "knew" "known") ;	-- misrepresented in IrregEng.gf
+  know_VQ = mkVQ (mkV "know" "knew" "known") ;    -- misrepresented in IrregEng.gf
+  know_VS = mkVS (mkV "know" "knew" "known") ;    -- misrepresented in IrregEng.gf
   last_V2 = mkV2 (mkV "last") ;
   leave_V = I.leave_V ;
   leave_V2 = mkV2 I.leave_V ;
@@ -392,10 +392,10 @@ lin
   write_to_V2 = mkV2 I.write_V (mkPrep "to") ;
 
   award_and_be_awarded_V2 = mkV2 (mkV "award and be awarded" 
-				    "awards and is awarded" 
-				    "awarded and was awarded"
-				    "awarded and been awarded"
-				    "awarding and been awarding") ;
+                                    "awards and is awarded" 
+                                    "awarded and was awarded"
+                                    "awarded and been awarded"
+                                    "awarding and been awarding") ;
 
 -- DETERMINERS
   a_few_Det = mkDeterminer plural "a few" ;
