@@ -49,7 +49,6 @@ lin
 
 lincat
   [QS] = {s1,s2 : X.QForm => Str} ;
-  [Det] = {s1,s2 : Str ; sp1,sp2 : R.NPCase => Str ; n : X.Number ; hasNum : Bool} ;
 
 lin
   RelNPa np rs = {
@@ -88,17 +87,5 @@ lin
   ConjQS conj ss = C.conjunctDistrTable X.QForm conj ss ;
   BaseQS x y = C.twoTable X.QForm x y ;
   ConsQS x xs = C.consrTable X.QForm C.comma x xs ;
-
-  ConjDet conj ss = C.conjunctDistrSS conj ss ** {
-    sp = \\c => conj.s1 ++ ss.sp1 ! c ++ conj.s2 ++ ss.sp2 ! c;
-    n = X.conjNumber conj.n ss.n; hasNum = ss.hasNum
-    } ;
-  BaseDet x y = C.twoSS x y ** {
-    sp1 = x.sp; sp2 = y.sp; n = X.conjNumber x.n y.n; hasNum = orB x.hasNum y.hasNum
-    } ;
-  ConsDet x xs = C.consrSS C.comma x xs ** {
-    sp1 = \\c => x.sp ! c ++ C.comma ++ xs.sp1 ! c;
-    sp2 = xs.sp2; n = X.conjNumber xs.n x.n; hasNum = orB xs.hasNum x.hasNum
-    } ;
 
 }

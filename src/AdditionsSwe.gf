@@ -51,7 +51,6 @@ lin
 
 lincat
   [QS] = {s1,s2 : X.QForm => Str} ;
-  [Det] = {s1,s2,sp1,sp2 : Bool => M.NGender => Str ; n : M.Number ; det : M.DetSpecies} ;
 
 lin
   RelNPa np rs = {
@@ -76,9 +75,5 @@ lin
   ConjQS conj ss = C.conjunctDistrTable X.QForm conj ss ;
   BaseQS x y = C.twoTable X.QForm x y ;
   ConsQS x xs = C.consrTable X.QForm C.comma x xs ;
-
-  ConjDet conj ss = variants{} ;
-  BaseDet x y = variants{} ;
-  ConsDet x xs = variants{} ;
 
 }

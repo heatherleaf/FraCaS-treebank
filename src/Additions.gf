@@ -41,7 +41,6 @@ fun
 
 cat
   [QS]{2} ;
-  [Det]{2} ;
 
 fun
   -- NP relative phrases, without comma
@@ -61,9 +60,6 @@ fun
 
   -- question conjunction
   ConjQS : Conj -> [QS] -> QS ;
-
-  -- determiner conjunction
-  ConjDet : Conj -> [Det] -> Det ;
 
   -- -- possible additional functions:
   -- AdVAdv : Adv -> AdV ;
