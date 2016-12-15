@@ -65,9 +65,9 @@ lin
   PassV2s v2 = predV (P.depV (lin V v2)) ;
 
   SoDoI subj = M.mkClause "det" (M.agrP3 M.neutrum M.Sg) 
-    (M.insertObj (\\_ => subj.s ! M.nominative ++ "också") (G.UseV I.göra_V)) ;
-  -- error in Anter: "det har gjort han också"
-  -- error in PNeg: "det gör inte han också" (better: "inte heller")
+    (M.insertObj (\\_ => subj.s ! M.nominative ++ "ocksÃ¥") (G.UseV I.gÃ¶ra_V)) ;
+  -- error in Anter: "det har gjort han ocksÃ¥"
+  -- error in PNeg: "det gÃ¶r inte han ocksÃ¥" (better: "inte heller")
   -- probably error in Inv/Sub word order too
 
   ExtAdvQS a s = {s = \\q => a.s ++ "," ++ s.s ! q} ;
