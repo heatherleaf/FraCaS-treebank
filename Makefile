@@ -29,6 +29,7 @@ dist: build clean
 	zip dist/$(ZIPFILE) $(FILES-TO-ZIP)
 
 build/$(BANK).%: $(GF-FILES)
+	mkdir -p build
 	python build_fracasbank.py $* src/$(BANK)I.gf $(LANGUAGES:%=src/$(BANK)%.gf) > $@
 
 #### HTML generation:
