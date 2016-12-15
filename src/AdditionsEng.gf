@@ -78,7 +78,7 @@ lin
 	  }
       in 
       case o of {
-	R.ODir   => so ++ did ++ (subj.s ! R.npNom) ;
+	R.ODir _ => so ++ did ++ (subj.s ! R.npNom) ;
 	R.OQuest => did ++ (subj.s ! R.npNom) ++ so 
       }
     } ;

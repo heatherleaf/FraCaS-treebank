@@ -1,6 +1,6 @@
 --# -path=.:alltenses
 
-concrete FraCaSSwe of FraCaS = GrammarSwe, AdditionsSwe, FraCaSLexSwe ** open
+concrete FraCaSSwe of FraCaS = GrammarSwe - [ConjDet], AdditionsSwe, FraCaSLexSwe ** open
   Prelude,
   (G=GrammarSwe),
   (A=AdditionsSwe),
@@ -55,8 +55,8 @@ lin
 
 lin
   elliptic_V = {s = \\_ => ellipsis; part = ""; vtype = M.VAct};
-  elliptic_NP_Sg = {s = \\_ => ellipsis; a = M.agrP3 M.utrum M.Sg} ;
-  elliptic_NP_Pl = {s = \\_ => ellipsis; a = M.agrP3 M.utrum M.Pl} ;
+  elliptic_NP_Sg = {s = \\_ => ellipsis; a = M.agrP3 M.utrum M.Sg; isPron = False} ;
+  elliptic_NP_Pl = {s = \\_ => ellipsis; a = M.agrP3 M.utrum M.Pl; isPron = False} ;
   elliptic_VP = G.UseV elliptic_V ;
   elliptic_Cl = {s = \\_,_,_,_ => ellipsis} ;
   elliptic_VPSlash = G.UseV elliptic_V ** {c2 = {s=ellipsis; hasPrep=False}; n3 = \\_ => ellipsis};

@@ -363,6 +363,7 @@ lin
       VVPastNeg => ["shouldn't"] ;
       VVPresNeg => "shan't"
       } ;
+    p = [] ;
     typ = VVAux
     } ;  
   sign_V2 = mkV2 "sign" ;

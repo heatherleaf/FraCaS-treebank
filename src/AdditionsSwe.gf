@@ -57,7 +57,8 @@ lin
   RelNPa np rs = {
     s = \\c => np.s ! c ++ rs.s ! np.a ! M.RNom ;
     a = np.a ;
-    isMod = np.isMod
+    isMod = np.isMod ;
+    isPron = False
     } ;
 
   UseComparA_prefix a = {s = (G.UseComparA a).s; isPre = True};

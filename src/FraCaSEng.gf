@@ -1,6 +1,6 @@
 --# -path=.:alltenses
 
-concrete FraCaSEng of FraCaS = GrammarEng, AdditionsEng, FraCaSLexEng ** open
+concrete FraCaSEng of FraCaS = GrammarEng - [ConjDet], AdditionsEng, FraCaSLexEng ** open
   Prelude,
   (G=GrammarEng),
   (A=AdditionsEng),
@@ -56,10 +56,10 @@ lin
 lin
   elliptic_V = P.mkV ellipsis ellipsis ellipsis ellipsis ellipsis ;
   elliptic_NP_Sg = {s = \\c => ellipsis; a = R.AgP3Sg R.Neutr} ;
-  elliptic_NP_Pl = {s = \\c => ellipsis; a = R.AgP3Pl} ;
+  elliptic_NP_Pl = {s = \\c => ellipsis; a = R.AgP3Pl R.Neutr} ;
   elliptic_VP = R.predV elliptic_V ;
   elliptic_Cl = {s = \\_,_,_,_ => ellipsis} ;
-  elliptic_VPSlash = R.predV elliptic_V ** {c2 = ""};
+  elliptic_VPSlash = R.predV elliptic_V ** {gapInMiddle = False; c2 = ""};
   elliptic_V2V = P.mkV2V elliptic_V P.noPrep P.noPrep ;
   elliptic_CN = {s = \\n,c => ellipsis; g = R.Neutr} ;
 
