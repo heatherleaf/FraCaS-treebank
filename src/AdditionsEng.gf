@@ -17,6 +17,7 @@ lin
   ComplBareVS = E.ComplBareVS ;
   StrandRelSlash = E.StrandRelSlash ; 
   EmptyRelSlash = E.EmptyRelSlash ; 
+  IdRP = E.which_who_RP ;
 
 lincat
   VPI   = E.VPI ;

@@ -1,6 +1,6 @@
 --# -path=.:alltenses
 
-concrete FraCaSSwe of FraCaS = GrammarSwe, AdditionsSwe, FraCaSLexSwe ** open
+concrete FraCaSSwe of FraCaS = GrammarSwe - [IdRP], AdditionsSwe, FraCaSLexSwe ** open
   Prelude,
   (G=GrammarSwe),
   (A=AdditionsSwe),

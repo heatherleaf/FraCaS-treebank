@@ -13,6 +13,8 @@ fun
   StrandRelSlash   : RP -> ClSlash -> RCl ;   -- that he lives in
   EmptyRelSlash    : ClSlash -> RCl ;   -- he lives in
 
+  IdRP : RP ;  -- use "which/who" instead of "that"
+
 cat
   VPI ;
   [VPI] {2} ;

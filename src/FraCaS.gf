@@ -1,6 +1,6 @@
 --# -path=.:alltenses
 
-abstract FraCaS = Grammar, Additions, FraCaSLex ** {
+abstract FraCaS = Grammar - [IdRP], Additions, FraCaSLex ** {
 
 flags
   startcat = Phr ;
