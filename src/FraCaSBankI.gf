@@ -542,8 +542,8 @@ lin s_120_3_q = (Question (UseQCl (Past) (PPos) (QuestCl (PredVP (UsePN (smith_P
 lin s_120_4_h = (Sentence (UseCl (Past) (PPos) (PredVP (UsePN (smith_PN)) (ComplSlash (SlashV2a (chair_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (meeting_N)))))));
 
 lin s_121_1_p = (Sentence (UseCl (Past) (PPos) (PredVP (UsePN (smith_PN)) (AdvVP (ComplSlash (SlashV2a (deliver_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N)))) (PrepNP (to_Prep) (UsePN (itel_PN)))))));
-lin s_121_2_p = (Sentence (UseCl (Past) (PPos) (PredVP (UsePron (she_Pron)) (AdVVP (also_AdV) (ComplSlash (Slash2V3 (deliver_V3) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (invoice_N)))) (UsePron (they_Pron)))))));
-lin s_121_3_p = (PSentence (and_PConj) (UseCl (Past) (PPos) (PredVP (UsePron (she_Pron)) (ComplSlash (Slash2V3 (deliver_V3) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (project_proposal_N)))) (UsePron (they_Pron))))));
+lin s_121_2_p = (Sentence (UseCl (Past) (PPos) (PredVP (UsePron (she_Pron)) (AdVVP (also_AdV) (ComplSlash (Slash3V3 (deliver_V3) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (invoice_N)))) (UsePron (they_Pron)))))));
+lin s_121_3_p = (PSentence (and_PConj) (UseCl (Past) (PPos) (PredVP (UsePron (she_Pron)) (ComplSlash (Slash3V3 (deliver_V3) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (project_proposal_N)))) (UsePron (they_Pron))))));
 lin s_121_4_q = (Question (UseQCl (Past) (PPos) (QuestCl (PredVP (UsePN (smith_PN)) (AdvVP (ComplSlash (SlashV2a (deliver_V2)) (ConjNP3 (and_Conj) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N))) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (invoice_N))) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (project_proposal_N))))) (PrepNP (to_Prep) (UsePN (itel_PN))))))));
 lin s_121_5_h = (Sentence (UseCl (Past) (PPos) (PredVP (UsePN (smith_PN)) (AdvVP (ComplSlash (SlashV2a (deliver_V2)) (ConjNP3 (and_Conj) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N))) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (invoice_N))) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (project_proposal_N))))) (PrepNP (to_Prep) (UsePN (itel_PN)))))));
 
@@ -820,7 +820,7 @@ lin s_177_1_p_NEW = (Sentence (UseCl (Past) (PPos) (PredVP (UsePN (john_PN)) (Co
 lin s_177_2_q = s_175_2_q;
 lin s_177_3_h = s_175_3_h;
 
-lin s_178_1_p = (Sentence (ConjS2 (comma_and_Conj) (UseCl (Past) (PPos) (PredVP (UsePN (john_PN)) (ComplSlash (SlashV2a (write_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N)))))) (UseCl (Past) (PPos) (PredVP (UsePN (bill_PN)) (AdvVP (ComplVSa (say_VS) (UseCl (Past) (PPos) (PredVP (UsePN (peter_PN)) (ComplVV (do_VV) (elliptic_VP))))) (too_Adv))))));
+lin s_178_1_p = (Sentence (ConjS2 (comma_and_Conj) (UseCl (Past) (PPos) (PredVP (UsePN (john_PN)) (ComplSlash (SlashV2a (write_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N)))))) (UseCl (Past) (PPos) (PredVP (UsePN (bill_PN)) (ComplVSa (say_VS) (UseCl (Past) (PPos) (PredVP (UsePN (peter_PN)) (AdvVP (ComplVV (do_VV) (elliptic_VP)) (too_Adv)))))))));
 lin s_178_2_q = (Question (UseQCl (Past) (PPos) (QuestCl (PredVP (UsePN (bill_PN)) (ComplVSa (say_VS) (UseCl (Past) (PPos) (PredVP (UsePN (peter_PN)) (ComplSlash (SlashV2a (write_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N)))))))))));
 lin s_178_3_h = (Sentence (UseCl (Past) (PPos) (PredVP (UsePN (bill_PN)) (ComplVSa (say_VS) (UseCl (Past) (PPos) (PredVP (UsePN (peter_PN)) (ComplSlash (SlashV2a (write_V2)) (DetCN (DetQuant (IndefArt) (NumSg)) (UseN (report_N))))))))));
 
@@ -1484,7 +1484,7 @@ lin s_324_2_q = variants{};
 lin s_324_3_h = (Sentence (UseCl (Present) (PPos) (PredVP (RelNPa (UsePron (everyone_Pron)) (UseRCl (Present) (PPos) (RelVP (IdRP) (ComplVV (start_VV) (AdvVP (UseV (gamble_V)) (PositAdvAdj (serious_A))))))) (AdvVP (UseV (continue_V)) (SubjS (until_Subj) (UseCl (Present) (PPos) (PredVP (UsePron (he_Pron)) (UseComp (CompAP (PositA (broke_A)))))))))));
 
 lin s_325_1_p = (Sentence (UseCl (Present) (PPos) (PredVP (RelNPa (UsePron (nobody_Pron)) (UseRCl (Present) (PPos) (RelVP (IdRP) (UseComp (CompAP (PositA (asleep_A))))))) (AdVVP (ever_AdV) (ComplVS (know_VS) (UseCl (Present) (PPos) (PredVP (UsePron (he_Pron)) (UseComp (CompAP (PositA (asleep_A)))))))))));
-lin s_325_2_p = (PSentence (but_PConj) (UseCl (Present) (PPos) (PredVP (DetCN (somePl_Det) (UseN (person_N))) (AdvVP (ComplVS (know_VS) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (UseComp (CompAP (PositA (asleep_A))))))) (SubjS (after_Subj) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (UseComp (CompAP (PositA (asleep_A)))))))))));
+lin s_325_2_p = (PSentence (but_PConj) (UseCl (Present) (PPos) (PredVP (DetCN (somePl_Det) (UseN (person_N))) (ComplVS (know_VS) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (AdvVP (UseComp (CompAP (PositA (asleep_A)))) (SubjS (after_Subj) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (UseComp (CompAP (PositA (asleep_A))))))))))))));
 lin s_325_3_q = (Question (UseQCl (Present) (PPos) (QuestCl (PredVP (DetCN (somePl_Det) (UseN (person_N))) (ComplVS (discover_VS) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (UseComp (CompAP (PositA (asleep_A)))))))))));
 lin s_325_4_h = (Sentence (UseCl (Present) (PPos) (PredVP (DetCN (somePl_Det) (UseN (person_N))) (ComplVS (discover_VS) (UseCl (PresentPerfect) (PPos) (PredVP (UsePron (they_Pron)) (UseComp (CompAP (PositA (asleep_A))))))))));
 
